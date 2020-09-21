@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="3214e56e-e295-4910-a38c-0565e9870201" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Ecomm" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3214e56e-e295-4910-a38c-0565e9870201fileName">Ecomm</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="Login" id="01169d0b-b6bc-4c94-a1f4-af29b23d8dbc">
+    <con:settings/>
+    <con:config service="API(A)" resourcePath="api/people" methodName="showPeople" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Login" id="b410a085-c314-4e5a-bd1b-7edf4bd46fef" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://swapi.dev/</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://https/swapi.co/api/people</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="de67d86c-0c23-4cb5-83c1-fa1ccc60d00b" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="7d3cf25b-3793-44ab-8196-501b171ab612" name="Response SLA">
+          <con:configuration>
+            <SLA>1000000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="SelectItem" id="54f2fe9e-cef7-405b-b8fd-db53052956b8">
+    <con:settings/>
+    <con:config service="API(A)" resourcePath="api/people/{peopleId}" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="SelectItem" id="88563c3e-79ea-4000-ab9e-45ac3484a4e7" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://swapi.dev/</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://swapi.dev/api/people/2/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="f5c18747-2a15-4b0b-afef-1313e927b377" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="84f5cba4-9b96-410e-8275-df40e1d6c862" name="Response SLA">
+          <con:configuration>
+            <SLA>1000000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="peopleId" value="2"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="PlaceItemInCart" id="17e78820-c082-4582-ab56-f2ed941ccd74">
+    <con:settings/>
+    <con:config service="API(A)" resourcePath="api/films" methodName="showFilms" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="PlaceItemInCart" id="61226318-b1d1-4221-af6d-1a0048d6df2d" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://swapi.dev/</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://swapi.dev/api/films/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="d3990307-962f-45ab-8b63-3d87d47f9912" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="0b17ba6b-3d73-4c92-859b-80fe8d6ea770" name="Response SLA">
+          <con:configuration>
+            <SLA>1000000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="CheckOut" id="97c36ad7-2a20-41bb-af13-03b98558a390">
+    <con:settings/>
+    <con:config service="API(A)" resourcePath="api/films/{filmId}" methodName="getFilmById" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="CheckOut" id="da378517-58e1-405d-95b6-d3284965943f" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://swapi.dev/</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://swapi.dev/api/films/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="1be74c02-ab8a-4d31-84ea-a51e33fc997f" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="0b754a7a-626d-4ccf-bfda-0a8979b8e361" name="Response SLA">
+          <con:configuration>
+            <SLA>1000000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="filmId" value="5"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="CancelOrder" id="cd00e199-3aee-44b6-a746-48d7d3a79a12">
+    <con:settings/>
+    <con:config service="API(A)" resourcePath="api/starships/{starshipId}{username}" methodName="getUserById" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="CancelOrder" id="d62d0546-bba3-406b-b16e-7688200b4cb4" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://swapi.dev/</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://swapi.dev/api/starships/4/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="6fca0a1f-0616-4578-b1f3-883327cc9347" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="226a9994-1b05-4171-94ec-4090d0fbb8d6" name="Response SLA">
+          <con:configuration>
+            <SLA>1000000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="starshipId" value="10"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>starshipId</con:entry>
+          <con:entry>username</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:setupScript/>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

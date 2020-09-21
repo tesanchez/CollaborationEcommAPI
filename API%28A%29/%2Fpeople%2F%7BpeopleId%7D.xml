@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/people/{peopleId}" path="/people/{peopleId}" id="3a16771f-fd72-4417-bfcb-6a620ef3b2f8" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3a16771f-fd72-4417-bfcb-6a620ef3b2f8fileName">%2Fpeople%2F%7BpeopleId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>peopleId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description>ID of person to return</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GET" id="ca00610e-4abc-456c-87df-90a9ecbaa160" method="GET">
+    <con:description>Returns a single people
+Get a specific people resource</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "name" : "string",
+  "birth_year" : "string",
+  "eye_color" : "string",
+  "gender" : "string",
+  "hair_color" : "string",
+  "height" : "string",
+  "mass" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="64eaf6e4-e9fd-4abb-b5f4-7b93c15a3412" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://swapi.dev/</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://swapi.dev/api/people/2/</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="peopleId" value="2"/>
+      </con:parameters>
+      <con:environmentSpec>
+        <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

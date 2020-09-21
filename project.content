@@ -1,0 +1,7 @@
+API%28A%29\%2Fpeople.xml
+API%28A%29\%2Fpeople%2F%7BpeopleId%7D.xml
+API%28A%29\%2Ffilms.xml
+API%28A%29\%2Ffilms%2F%7BfilmId%7D.xml
+API%28A%29\%2Fstarships.xml
+API%28A%29\%2Fstarships%2F%7BstarshipId%7D.xml
+IntegrationTests\Ecomm.xml

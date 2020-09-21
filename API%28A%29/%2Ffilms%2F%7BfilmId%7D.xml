@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/films/{filmId}" path="/films/{filmId}" id="7a23f14b-10fc-4e95-afa5-b61d609d5cea" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7a23f14b-10fc-4e95-afa5-b61d609d5ceafileName">%2Ffilms%2F%7BfilmId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>filmId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description>ID of film that needs to be fetched</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="getFilmById" id="203a5119-dc30-4cc3-8c09-07f6a8d36b90" method="GET">
+    <con:description>Returns a specific film
+get a specific film resource</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "title" : "string",
+  "episode_id" : "string",
+  "opening_crawl" : "string",
+  "director" : "string",
+  "producer" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="a3462684-1408-4b7b-9fb5-d2bab7d5e295" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://swapi.dev/</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="05d130ca-dcf7-4234-bb1b-99bdc8948839" name="IntegrationTests" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test suite generated for the REST service [SWAPI]</con:description>
+  <con:settings>
+    <con:setting id="05d130ca-dcf7-4234-bb1b-99bdc8948839fileName">IntegrationTests</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="f06a92da-b61f-4a7d-a406-01c98b42c5a0">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testSuite>
