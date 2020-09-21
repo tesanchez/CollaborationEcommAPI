@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/starships" path="/starships" id="c2d50fd6-3aaa-42c9-89ac-e130ce48c29f" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/starships" path="/starships" id="c2d50fd6-3aaa-42c9-89ac-e130ce48c29f" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="c2d50fd6-3aaa-42c9-89ac-e130ce48c29ffileName">%2Fstarships</con:setting>
   </con:settings>

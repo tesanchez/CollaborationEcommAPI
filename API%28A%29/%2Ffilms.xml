@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/films" path="/films" id="d5ecd68e-41bb-4891-b457-128429bae3da" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/films" path="/films" id="d5ecd68e-41bb-4891-b457-128429bae3da" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="d5ecd68e-41bb-4891-b457-128429bae3dafileName">%2Ffilms</con:setting>
   </con:settings>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:RestService" id="f619f266-75c9-40c7-98d4-8cc4bb051c07" name="API(A)" type="rest_ex" wadlVersion="https://swagger.io/swagger2/specification" definitionUrl="C:\StarWest2020\Temil-swapi-1.0.0-resolved.json" basePath="api" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<con:interface xsi:type="con:RestService" id="f619f266-75c9-40c7-98d4-8cc4bb051c07" name="API(A)" type="rest_ex" wadlVersion="https://swagger.io/swagger2/specification" definitionUrl="C:\StarWest2020\Temil-swapi-1.0.0-resolved.json" basePath="api" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:description>Welcome to the swapi, the Star Wars API! This documentation should help you familiarise yourself with the resources available and how to consume them with HTTP requests. If you're after a native helper library then I suggest you scroll down and check out what's available. Read through the getting started section before you dive in. Most of your problems should be solved just by reading through it.</con:description>
   <con:settings>
     <con:setting id="f619f266-75c9-40c7-98d4-8cc4bb051c07fileName">API%28A%29</con:setting>
