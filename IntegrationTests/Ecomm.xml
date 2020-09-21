@@ -4,10 +4,10 @@
     <con:setting id="3214e56e-e295-4910-a38c-0565e9870201fileName">Ecomm</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
-  <con:testStep type="restrequest" name="Authenticate" id="01169d0b-b6bc-4c94-a1f4-af29b23d8dbc">
+  <con:testStep type="restrequest" name="Login" id="01169d0b-b6bc-4c94-a1f4-af29b23d8dbc">
     <con:settings/>
     <con:config service="API(A)" resourcePath="api/people" methodName="showPeople" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Authenticate" id="b410a085-c314-4e5a-bd1b-7edf4bd46fef" mediaType="application/json">
+      <con:restRequest name="Login" id="b410a085-c314-4e5a-bd1b-7edf4bd46fef" mediaType="application/json">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
