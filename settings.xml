@@ -3,6 +3,7 @@
   <con:settings>
     <con:setting id="b381c8cc-0159-4741-8827-9005dc2a85f9fileName">EcommService</con:setting>
   </con:settings>
+  <con:requirements/>
   <con:properties/>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>

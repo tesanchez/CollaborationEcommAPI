@@ -189,6 +189,33 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
+  <con:testStep type="restrequest" name="DeleteMe" id="46664e58-926f-48ff-bca7-5d3fc3c7180b">
+    <con:settings/>
+    <con:config service="API(A)" methodName="getFilmById" resourcePath="api/films/{filmId}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="DeleteMe" id="675707c7-9de7-483a-992a-3be200354fcb" mediaType="application/json">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://https://swapi.co</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="4c80e0d9-00b4-4ba3-996a-8e7d4f9452d6" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="57344d50-7c21-47ad-a8ac-81066945e0ff" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
   <con:setupScript/>
   <con:properties/>
   <con:reportParameters/>
