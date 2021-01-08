@@ -39,10 +39,10 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="SelectItem" id="54f2fe9e-cef7-405b-b8fd-db53052956b8">
+  <con:testStep type="restrequest" name="SelectItem1" id="54f2fe9e-cef7-405b-b8fd-db53052956b8">
     <con:settings/>
     <con:config service="API(A)" resourcePath="api/people/{peopleId}" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="SelectItem" id="88563c3e-79ea-4000-ab9e-45ac3484a4e7" mediaType="application/json">
+      <con:restRequest name="SelectItem1" id="88563c3e-79ea-4000-ab9e-45ac3484a4e7" mediaType="application/json">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
