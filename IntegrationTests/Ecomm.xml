@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="3214e56e-e295-4910-a38c-0565e9870201" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Ecomm" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase id="3214e56e-e295-4910-a38c-0565e9870201" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Ecomm2" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="3214e56e-e295-4910-a38c-0565e9870201fileName">Ecomm</con:setting>
+    <con:setting id="3214e56e-e295-4910-a38c-0565e9870201fileName">Ecomm2</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep type="restrequest" name="Login" id="01169d0b-b6bc-4c94-a1f4-af29b23d8dbc">
